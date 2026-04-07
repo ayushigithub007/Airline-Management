@@ -1,0 +1,39 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/airline.JPG" Style="z-index: 100;
+            left: 13px; position: absolute; top: 79px; height: 117px;" Width="923px" />
+        <asp:LinkButton ID="homlbtn" runat="server" Font-Bold="True" Font-Size="Medium" Height="32px"
+            PostBackUrl="~\home.aspx" Style="z-index: 101; left: 15px; position: absolute;
+            top: 195px; right: 760px;" Width="100px">Home</asp:LinkButton>
+        <asp:LinkButton ID="flghtlbtn" runat="server" Font-Bold="True" Font-Size="Medium"
+            Height="32px" PostBackUrl="~/flightdetail.aspx" Style="z-index: 102; left: 105px; position: absolute;
+            top: 196px" Width="100px">Flight</asp:LinkButton>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        <asp:LinkButton ID="pnrlbtn" runat="server" Height="30px" Style="z-index: 103; left: 208px;
+            position: absolute; top: 197px" ToolTip="Get pnr status" Width="130px" 
+            Font-Bold="True" PostBackUrl="~/pnr.aspx">PNR Status</asp:LinkButton>
+        <asp:LinkButton ID="tcktlbtn" runat="server" Font-Bold="True" Font-Size="Medium"
+            Height="32px" PostBackUrl="~/createuser.aspx" Style="z-index: 104; left: 348px; position: absolute;
+            top: 195px" Width="133px">Reservation</asp:LinkButton>
+        &nbsp;
+        <asp:LinkButton ID="cntctlbtn" runat="server" Font-Bold="True" Font-Size="Medium"
+            Height="32px" PostBackUrl="~\contact.aspx" Style="z-index: 105; left: 482px;
+            position: absolute; top: 195px" Width="100px">Contact Us</asp:LinkButton>
+        <asp:LinkButton ID="fdlbtn" runat="server" Font-Bold="True" Font-Size="Medium" Height="32px"
+            PostBackUrl="~\feedback.aspx" Style="z-index: 106; left: 583px; position: absolute;
+            top: 195px" Width="100px">Feedback</asp:LinkButton>
+        &nbsp;&nbsp;&nbsp;
+    </div>
+    </form>
+</body>
+</html>
